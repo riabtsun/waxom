@@ -1,0 +1,21 @@
+*{
+box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+
+@media screen and(max-width: 900px) {
+  .owl-nav{
+    display: none;
+  }
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  &:visited{
+    color: #fff;
+  }
+}

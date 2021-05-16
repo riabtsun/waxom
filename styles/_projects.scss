@@ -1,0 +1,153 @@
+.projects{
+  padding-bottom: 80px;
+}
+.projects__title{
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #555;
+}
+.projects__subtitle{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  color: #8c8c8c;
+}
+.project-btn{
+  padding: 10px 18px;
+  border-radius: 3px;
+  border: solid 1px #ebebeb;
+  background-color: #11111100;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  color: #8c8c8c;
+  margin: 10px;
+  &:hover{
+    background-color: #998675;
+    color: #fff;
+  }
+}
+.project-btn-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-cards-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:900px) {
+  .project-cards-wrap{
+  justify-content: center;
+  }
+}
+.hover-link{
+  .bx-link,
+  .bx-search-alt{
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    filter: none;
+  }
+  .bx-link{
+    margin-right: 15px;
+  }
+  .bx-search-alt{
+    margin-left: 15px;
+    
+  }
+}
+.project-card{
+  max-width: 360px;
+  margin-top: 30px;
+  position: relative;
+  &:hover{
+    .bx-link,
+    .bx-search-alt{
+      display: block;
+      &:hover{
+      color: #c7b299;
+      } 
+    }  
+    .project-card__title{
+      color: #fff;
+    }
+    .project-card__text{
+      background-color: #362f2d;
+      &::after{
+        content: '';
+        position: absolute;
+        left: 20px; bottom: 108px;
+        border: 20px solid transparent; 
+        border-bottom: 14px solid #362f2d;
+      }
+    }
+    .project-card__descr{
+      color: #c7b299;
+    }
+    .project-card__img{
+      filter: brightness(60%);
+    }
+  }
+}
+.project-card__hover-links{
+  position: absolute;
+  top: 106px;
+  left: 134px;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.project-card__text{
+  background-color: #fbfaf8;
+  position: relative;
+  top: -4px;
+  padding-bottom: 26px;
+  &::after{
+    content: '';
+    position: absolute;
+    left: 20px; bottom: 108px;
+    border: 20px solid transparent; 
+    border-bottom: 14px solid #fbfaf8;;
+  }
+}
+.project-card__title{
+  margin-top: 0;
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7b299;
+  padding-left: 28px;
+  padding-top: 30px;
+  margin-bottom: 12px;
+}
+.project-card__descr{
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #d1d1d1;
+  padding-left: 28px;
+}
+.btn-load{
+  padding: 20px 44px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #998675;
+  display: block;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 800;
+}

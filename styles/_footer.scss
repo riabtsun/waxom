@@ -1,0 +1,149 @@
+.footer{
+  padding: 80px 0;
+  padding-bottom: 0;
+  background-color: #191919;
+  
+}
+.footer-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and(max-width:800px){
+  .footer-wrapper{
+    justify-content: center;
+  }
+}
+.waxom-about{
+  .waxom-logo{
+    font-family: 'Raleway';
+    font-size: 34px;
+    letter-spacing: -1.36px;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .waxom-about-text{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: left;
+    color: #555;
+    max-width: 258px;
+  }
+  .item--recent__read{
+    color: #fff;
+  }
+}
+.footer__recent-posts{
+  max-width: 270px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  &:last-of-type{
+    width: 350px;
+  }
+}
+.footer__title{
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  color: #fff;
+}
+.post-date{
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.67;
+  color: #363636;
+}
+.post-text{
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #555;
+  span{
+    color: #00bff3;
+  }
+}
+.post-list{
+  padding-left: 0;
+}
+.post-list__item{
+  &:hover{
+    .post-date{
+      color: #fff;
+    }
+    .post-text{
+      color: #c7b299;
+      a{
+        color: #fff;
+      }
+    }
+  }
+  &hr{
+    color: #252525;
+  }
+}
+.dribbble{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0;
+  width: 270px;
+    li{
+      padding: 8px;
+    }
+}
+
+.footer-rights{
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+}
+.copyrights{
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.law-list{
+  margin-right: 150px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: start;
+  li{
+    margin-left: 10px;
+    color: #959595;
+    a{
+      color: #959595;
+      font-family: 'Montserrat';
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.54;
+      &:hover{
+        color: #c7b299;
+      }
+    }
+  }
+}
+.authors{
+  display: flex;
+  padding: 0;
+  margin-left: 150px;
+  li{
+    color: #959595;
+    margin-left: 10px;
+    span{
+      color: #555;
+    }
+  }
+}
+@media screen and(max-width:800px) {
+  .authors,
+  .law-list{
+    margin: 0;
+  }
+}

@@ -1,0 +1,140 @@
+.recent-posts{
+  padding: 80px 0;
+}
+.recent-title{
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+}
+.recent-subtitle{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  margin: 0 auto;
+  text-align: center;
+  color: #8c8c8c;
+  max-width: 756px;
+}
+.item--recent__text{
+  background-color: #fff;
+  border: solid 1px #f8f8f8;
+  max-width: 370px;
+}
+.owl-2{
+  .active{
+    .item--recent__text:nth-of-type(2){
+      background-color: #362f2d;
+    }
+  }
+}
+.recent-subtitle {
+  padding-bottom: 40px;
+}
+.item--recent{
+  position: relative;
+  &__text{
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 32px;
+  }
+  &__title{
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+  }
+  &__desr{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    color: #8c8c8c;
+  }
+  &__read{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    text-align: left;
+    color: #c7b299;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      border: 5px solid transparent; 
+      border-left: 8px solid #c7b299;
+      margin-left: 10px;
+      top: 5px;
+    }
+  }
+  img{
+    position: relative;
+    top: 2px;
+    right: -1px;
+  }
+}
+.calendar__day{
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px 6px 0 0;
+  background-color: #363636;
+  margin-left: 20px;
+}
+.calendar__month{
+  position: absolute;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  color: #fff;
+  top: 49px;
+  left: 20px;
+  padding: 3px 13px;
+  background-color: #252525;
+  border-radius: 0 0 6px 6px;
+}
+.owl-2{
+  .center{
+    .item--recent__text{
+      background-color: #362f2d;
+    }
+    .item--recent__title{
+      color: #c7b299;
+    }
+    .item--recent__descr{
+      color: #fff;
+    }
+    .calendar__day{
+      background-color: #c7b299;
+    }
+    .calendar__month{
+      background-color: #a48d72;
+    }
+    img{
+      filter: brightness(60%);
+    }
+  }
+}
+.row{
+  .owl-2{
+    .owl-nav{
+      top: auto;
+      justify-content: center;
+      span{
+        color: #c7b299;
+        border: 1px solid #c7b299;
+        border-radius: 50%;
+        padding: 0 6px;
+      }
+    }
+  }
+}

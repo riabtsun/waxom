@@ -1,0 +1,24 @@
+.friends{
+  background-image: url('/img/friends.jpg');
+  padding: 136px 0;
+  &__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and(max-width: 720px) {
+  .friends{
+    padding-bottom: 50px;
+  }
+  .friends__wrap{
+    flex-direction: column;
+    a{
+      margin-bottom: 30px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }  
+  }
+}
